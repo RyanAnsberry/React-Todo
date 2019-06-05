@@ -3,7 +3,7 @@ import React from 'react';
 function ToDo(props) {
     return (
         <div>
-            <p>{props.task}</p>
+            {props.task}
         </div>
     );
 }
