@@ -34,6 +34,12 @@ class App extends React.Component {
   };
 
   clickHandler = event => {
+    const filteredList = this.state.todos.filter( todo => {
+      return todo.completed === false; 
+    });
+    this.setState(
+      {todos: filteredList}
+    )
   };
 
   submitHandler = event => {
